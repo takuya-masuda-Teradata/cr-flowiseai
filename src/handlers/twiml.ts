@@ -6,7 +6,8 @@ export default function twimlHandler(req: FastifyRequest, reply: FastifyReply) {
     <Connect>
       <ConversationRelay
         url="wss://${req.server.config.DOMAIN}/ws"
-        welcomeGreeting="Hello and welcome to NightOwl Fitness! How can I be of service to you today?"
+        welcomeGreeting="こんにちは、どのようなご用件ですか？"
+        language="ja-JP"
       />
     </Connect>
   </Response>`;
