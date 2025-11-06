@@ -44,12 +44,12 @@ export default class FlowiseClient {
 
   constructor(config: Config) {
     this.client = new Flowise({
-      baseUrl: "https://cloud.flowiseai.com",
+      baseUrl: "http://localhost:3000",
       apiKey: config.flowiseApiKey,
     });
     this.apiKey = config.flowiseApiKey;
     this.chatflowId = config.flowiseChatflowId;
-    this.apiUrl = "https://cloud.flowiseai.com";
+    this.apiUrl = "http://localhost:3000";
     this.logger = config.logger;
   }
 

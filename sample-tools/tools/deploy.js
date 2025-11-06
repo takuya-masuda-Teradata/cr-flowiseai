@@ -155,7 +155,7 @@ const tools = [
 
 // Function to create tools
 async function createTool(tool) {
-  const response = await fetch("https://cloud.flowiseai.com/api/v1/tools", {
+  const response = await fetch("http://localhost:3000/api/v1/tools", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${FLOWISE_API_KEY}`,
